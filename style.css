@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   text-rendering: optimizelegibility;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-optical-sizing: auto;
   line-height: 1.5;
@@ -16,10 +16,6 @@ body {
   -moz-animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
-}
-
-p {
-  font-weight: 700;
 }
 
 h1 {
