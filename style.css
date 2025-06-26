@@ -10,7 +10,12 @@
 body {
   background-color: var(--background);
   color: var(--font_color);
-  font-size: 1px;
+  font-size: 5vw;
+  text-align: center;
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
 }
 
 h1 {
