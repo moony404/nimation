@@ -64,12 +64,17 @@ p {
   font-weight: 700;
 }
 
+
+
+
+
+
+/* code for the word thingy */
 .word {
   position: absolute;
   width: 220px;
   opacity: 0;
 }
-
 .letter {
   display: inline-block;
   position: relative;
@@ -77,117 +82,22 @@ p {
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
 }
-
 .letter.out {
   transform: rotateX(90deg);
   transition: transform 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-
 .letter.behind {
   transform: rotateX(-90deg);
 }
-
 .letter.in {
   transform: rotateX(0deg);
   transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-.wisteria {
-  color: #8e44ad;
-}
-
-.belize {
-  color: #2980b9;
-}
-
-.pomegranate {
-  color: #c0392b;
-}
-
-.green {
-  color: #16a085;
-}
-
-.midnight {
-  color: #2c3e50;
-}
-
-
-
-/* for the rolling banner */
-img {
-  max-width: 100%;
-}
-
-h1 {
-  text-align: center;
-  margin-block-end: 2.5rem;
-}
-
-.stock-ticker {
-  font-size: 15px;
-  padding-block: 8px;
-  border-block: 1px solid;
-  overflow: hidden;
-  user-select: none;
-
-  --gap: 20px;
-  display: flex;
-  gap: var(--gap);
-}
-
-.stock-ticker ul {
-  list-style: none;
-  flex-shrink: 0;
-  min-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--gap);
-
-  animation: scroll 20s linear infinite;
-}
-
-@keyframes scroll {
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
-}
-
-.stock-ticker ul:first-child {
-  /* background-color: yellow; */
-}
-
-.stock-ticker ul:last-child {
-  /* background-color: pink; */
-}
-
-.stock-ticker .company,
-.stock-ticker .price {
-  font-weight: bold;
-}
-
-.stock-ticker .price {
-  margin-inline: 4px;
-}
-
-.stock-ticker .plus::before {
-  content: "↑";
-}
-
-.stock-ticker .minus::before {
-  content: "↓";
-}
-
-.stock-ticker .plus .change,
-.stock-ticker .plus::before {
-  color: #089981;
-}
-
-.stock-ticker .minus .change,
-.stock-ticker .minus::before {
-  color: #f23645;
-}
+.wisteria {  color: #8e44ad;}
+.belize {  color: #2980b9;}
+.pomegranate {  color: #c0392b;}
+.green {  color: #16a085;}
+.midnight {  color: #2c3e50;}
 
 
 
@@ -199,14 +109,21 @@ h1 {
 
 
 
-.roll {
+
+
+
+
+
+/* for the rolling banner *
+
+/* .roll {
   position: absolute;
   top: 40vw;
   left: 45vw;
   height: 10vw;
   width: 10vw;
   background-color: blue;
-  animation: scroll 20s linear infinite;
+  animation: scroll 4s linear infinite;
 }
 
 /* animation: scroll 20s linear infinite; */
@@ -215,6 +132,6 @@ h1 {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(1000%);
   }
-}
+} */
