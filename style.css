@@ -12,7 +12,7 @@
 body {
   background-color: whitesmoke;
   color: black;
-  font-size: 5vw;
+  font-size: 38px;
   text-align: center;
   animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
@@ -162,16 +162,18 @@ p {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 }
 
 .logos {
   position: absolute;
-  top: 20vw;
+  top: -40vw;
+  left: 10vw;
+  rotate: 30deg;
   overflow: hidden;
   padding: 60px 0;
-  background: white;
+  background: rgba(255, 255, 255, 0);
   white-space: nowrap;
   position: relative;
 }
@@ -188,12 +190,12 @@ p {
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
 }
 
 .logos:hover .logos-slide {
@@ -208,4 +210,4 @@ p {
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
-}&
+}
