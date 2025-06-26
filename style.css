@@ -1,3 +1,32 @@
 * {
-    /* test */
+  margin: 0px;
+  text-rendering: optimizelegibility;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font_color);
+}
+
+/* for button in general */
+
+.button {
+  margin-top: 2vw;
+  margin-left: 2vw;
+  font-size: 12px;
+  background-color: var(--background_button_first);
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button:hover{
+  background-color: var(--background_button_second);
+  cursor: pointer;
 }
